@@ -1,0 +1,20 @@
+{
+  "name": "hot-restaurant",
+  "version": "1.0.0",
+  "description": "A very hot restuarant",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jennbono/hot-restaurant.git"
+  },
+  "author": "Lonn Dog and Co.",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jennbono/hot-restaurant/issues"
+  },
+  "homepage": "https://github.com/jennbono/hot-restaurant#readme"
+}
