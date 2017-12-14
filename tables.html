@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Spicy Restaurant | Tables</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="https://getbootstrap.com/docs/4.0/examples/sticky-footer/sticky-footer.css">
+  <link href="https://fonts.googleapis.com/css?family=Abel|Grand+Hotel" rel="stylesheet">
+	<script src="https://use.fontawesome.com/b7e3bcf6e1.js"></script>
+</head>
+<body>
+
+	<div class="container-fluid">
+
+		<div class="jumbotron jumbotron-fluid bg-danger">
+			<h1 class="text-center text-light display-4"><i class="fa fa-fire" aria-hidden="true"></i> Spicy Restaurant</h1>
+			<hr>
+			<h3 class="text-center text-light">Current Reservations and Waiting List</h3>
+			<br>
+
+			<div class="text-center">
+				<a href="/reserve"><button type="button" class="btn btn-lg btn-warning"><i class="fa fa-credit-card" aria-hidden="true"></i> Make Reservation</button></a>
+				<a href="/"><button type="button" class="btn btn-lg btn-secondary"><i class="fa fa-home" aria-hidden="true"></i></button></a>
+			</div>
+		</div>
+
+    <div class="card">
+			<div class="card-header bg-danger text-light">
+        Current Reservations
+      </div>
+      <div class="card-body bg-light" id="tableSection">
+
+      </div>
+    </div>
+	  <div class="card">
+      <div class="card-header bg-danger text-light">
+        Waiting List
+      </div>
+      <div class="card-body bg-light" id="waitlistSection">
+      </div>
+    </div>
+
+	</div>
+  <footer class="footer bg-dark">
+    <div class="container text-light">
+      <p>Control Panel <i class="fa fa-fire" aria-hidden="true"></i> <i class="fa fa-fire" aria-hidden="true"></i> <i class="fa fa-fire" aria-hidden="true"></i> <a href="#" id="clear">Clear Table</a> | <a href="/api/tables">API Table Link</a> | <a href="/api/waitlist">API Wait List</a></p>
+    </div>
+  </footer>
+
+</body>

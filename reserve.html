@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Spicy Restaurant | Reservations</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="https://getbootstrap.com/docs/4.0/examples/sticky-footer/sticky-footer.css">
+  <link href="https://fonts.googleapis.com/css?family=Abel|Grand+Hotel" rel="stylesheet">
+	<script src="https://use.fontawesome.com/b7e3bcf6e1.js"></script>
+</head>
+<body>
+
+	<div class="container-fluid">
+
+		<div class="jumbotron jumbotron-fluid bg-danger">
+			<h1 class="text-center text-light display-4"><i class="fa fa-fire" aria-hidden="true"></i> Spicy Restaurant</h1>
+			<hr>
+			<h3 class="text-center text-light">Make your reservation</h3>
+			<br>
+
+			<div class="text-center">
+				<a href="/tables"><button type="button" class="btn btn-lg btn-dark"><i class="fa fa-table" aria-hidden="true"></i> View Tables</button></a>
+				<a href="/"><button type="button" class="btn btn-lg btn-secondary"><i class="fa fa-home" aria-hidden="true"></i></button></a>
+			</div>
+		</div>
+
+    <div class="card">
+			<div class="card-header bg-danger text-light">
+        Table Reservation
+      </div>
+      <div class="card-body bg-light">
+        <form role="form">
+
+          <div class="form-group">
+            <label for="">Name</label>
+            <input type="text" class="form-control" id="reserve_name">
+          </div>
+
+          <div class="form-group">
+            <label for="">Phone Number</label>
+            <input type="text" class="form-control" id="reserve_phone">
+          </div>
+
+          <div class="form-group">
+            <label for="">Email</label>
+            <input type="text" class="form-control" id="reserve_email">
+          </div>
+
+          <div class="form-group">
+            <label for="">Unique ID</label>
+            <input type="text" class="form-control" id="reserve_uniqueID">
+          </div>
+
+          <button type="submit" class="btn btn-primary submit">Submit</button>
+        </form>
+      </div>
+    </div>
+
+	</div>
+  <footer class="footer bg-dark">
+    <div class="container text-light">
+      <p><a href="/api/tables">API Table Link</a> | <a href="/api/waitlist">API Wait List</a> </p>
+    </div>
+  </footer>
+
+</body>
+</html>
