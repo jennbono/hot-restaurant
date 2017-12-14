@@ -2,7 +2,7 @@
 var express = require("express");
 var bodyParser = require("body-parser");
 var path = require("path");
-var reservation = require("./reservation.js");
+
 
 // global vars
 var app = express();
@@ -24,8 +24,12 @@ app.get("/reserve", function(req, res) {
 });
 
 app.get("/tables", function(req, res) {
-  res.sendFile(path.join(__dirname, "reserve.html"));
+  res.sendFile(path.join(__dirname, "tables.html"));
+  // res.json(reservations);
+  // res.json(waitingList);
 });
+
+
 
 // post
 app.post("/newres", function(req, res) {
@@ -70,3 +74,6 @@ var waitingList = [
 	}
 ]
 
+app.listen(PORT, function() {
+  console.log("App listening on PORT " + PORT);
+});

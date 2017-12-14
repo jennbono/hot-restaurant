@@ -1,10 +1,10 @@
-$("#add-btn").on("click", function(event) {
+$("#submit").on("click", function(event) {
       event.preventDefault();
       var newRes = {
-        name: $("#name").val().trim(),
-        role: $("#role").val().trim(),
-        age: $("#age").val().trim(),
-        forcePoints: $("#force-points").val().trim()
+        name: $("#reserve_name").val().trim(),
+        phone: $("#reserve_phone").val().trim(),
+        email: $("#reserve_email").val().trim(),
+        id: $("#reserve_uniqueID").val().trim()
       };
 
      // Question: What does this code do??
@@ -17,4 +17,4 @@ $("#add-btn").on("click", function(event) {
 			alert("Your table has been reserved!");
   		};
       });
-    });
+  });
