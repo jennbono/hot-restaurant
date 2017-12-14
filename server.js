@@ -37,10 +37,18 @@ app.post("/newres", function(req, res) {
   //newres.routeName = newcharacter.name.replace(/\s+/g, "").toLowerCase();
 
   console.log(newRes);
+  
+  // this function puts the reservation information in the appropriate array.
+  
+  if(reservations.length > 3 ){
+  	waitingList.push(newRes);
+  }else{
+  	reservations.push(newRes);
+	
+  };
 
-  reservation.reservations.push(newRes);
 
-  res.json(newcharacter);
+  res.json(newRes);
 });
 
 var reservations = [
