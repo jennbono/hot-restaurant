@@ -1,23 +1,4 @@
-module.exports +
 
-var reservations = [
-	{
-		name: "Bob",
-		phone: 867 + "-" + 5309,
-		email: "bob@bob.email",
-		id: 001
-	}
-]
-
-var waitingList = [
-	{
-		name: "Todd",
-		phone: 867 + "-" + 5310,
-		email: "todd@todd.email",
-		id: 002
-
-	}
-]
 
 
 

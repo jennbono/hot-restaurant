@@ -12,6 +12,8 @@ var PORT = 3000;
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
+
+
 // routes
 app.get("/", function(req, res) {
   res.sendFile(path.join(__dirname, "index.html"));
@@ -40,3 +42,23 @@ app.post("/newres", function(req, res) {
 
   res.json(newcharacter);
 });
+
+var reservations = [
+	{
+		name: "Bob",
+		phone: 867 + "-" + 5309,
+		email: "bob@bob.email",
+		id: 001
+	}
+]
+
+var waitingList = [
+	{
+		name: "Todd",
+		phone: 867 + "-" + 5310,
+		email: "todd@todd.email",
+		id: 002
+
+	}
+]
+
